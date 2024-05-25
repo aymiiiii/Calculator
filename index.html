@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <h1>Simple Calculator</h1>
+            <input class="input1" type="text" id="userinput" readonly>
+        </div>
+        <div class="buttons">
+            <input class="otherKeys" type="button" value="AC" onclick="clearInput()">
+            <input class="otherKeys" type="button" value="+-" onclick="toggleSign()">
+            <input class="otherKeys" type="button" value="%" onclick="appendInput('%')">
+            <input class="operations" type="button" value="/" onclick="appendInput('/')"><br>
+            <input class="numbers" type="button" value="7" onclick="appendInput('7')">
+            <input class="numbers" type="button" value="8" onclick="appendInput('8')">
+            <input class="numbers" type="button" value="9" onclick="appendInput('9')">
+            <input class="operations" type="button" value="x" onclick="appendInput('*')"><br>
+            <input class="numbers" type="button" value="4" onclick="appendInput('4')">
+            <input class="numbers" type="button" value="5" onclick="appendInput('5')">
+            <input class="numbers" type="button" value="6" onclick="appendInput('6')">
+            <input class="operations" type="button" value="-" onclick="appendInput('-')"><br>
+            <input class="numbers" type="button" value="1" onclick="appendInput('1')">
+            <input class="numbers" type="button" value="2" onclick="appendInput('2')">
+            <input class="numbers" type="button" value="3" onclick="appendInput('3')">
+            <input class="operations" type="button" value="+" onclick="appendInput('+')"><br>
+            <input class="zero" type="button" value="0" onclick="appendInput('0')">
+            <input class="operator" type="button" value="." onclick="appendInput('.')">
+            <input class="operations" type="button" value="=" onclick="calculate()">
+        </div>
+    </div>
+
+    <script>
+        function clearInput() {
+            document.getElementById('userinput').value = '';
+        }
+
+        function appendInput(value) {
+            document.getElementById('userinput').value += value;
+        }
+
+        function toggleSign() {
+            const inputField = document.getElementById('userinput');
+            inputField.value = inputField.value ? String(-parseFloat(inputField.value)) : '';
+        }
+
+        function calculate() {
+            const inputField = document.getElementById('userinput');
+            try {
+                let result = eval(inputField.value.replace('%', '/100').replace('x', '*'));
+                inputField.value = result;
+            } catch (e) {
+                inputField.value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(BACKGROUND.png);
+    text-align: center;
+}
+
+.display h1{
+    color: white;
+    font-family: 'Gill Sans';
+    font-weight: 600;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+img{
+    margin-top: 4%;
+    margin-left: 37%;
+    width: 25%;
+}
+.time{
+    width: 3%;
+    margin-top: -20%;
+}
+
+.input1{
+    width: 15.5%;
+    height: 130px;
+    border-radius: 1%;
+    background-color: black;
+    margin-top: 8.7%;
+    border-color: transparent;
+    margin-left: 1.5%;
+    text-align: right;
+}
+.buttons{
+    margin-left: 1%;
+}
+input{
+    width: 3%;
+    height: 56px;
+    border-radius: 60%;
+    font-size: 24px;
+    margin-top: 1.5%;
+    border-color: transparent;
+    margin-left: 0.3%;
+    margin-right: 0.1%;
+    font-weight: 500;
+    color: white;
+}
+
+.zero{
+    width: 6.5%;
+    height: 59px;
+    border-radius: 80px;
+    background-color: #343232;
+}
+
+.move{
+    margin-left: 1%;
+}
+
+.otherKeys{
+    background-color: #a6a6a6;
+    color: black;
+}
+
+.operations{
+    background-color: #F39C12;
+}
+
+.numbers{
+    background-color: #343232;
+}
+
+.operator{
+    background-color: #343232;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-image: url(PHONE.png);
+        background-size: cover;
+        background-position-y: 90px;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin-top: 0%;
+        background-color: black;
+    }
+    .display h1{
+        font-size: 30px;
+        margin-top: 30%;
+        margin-left: 0;
+    }
+    .input1 {
+        width: 44%;
+        height: 100px;
+        margin-top: 35%;
+        margin-bottom: 13%;
+        border-color: transparent;
+        margin-left: 2%;
+        font-size: 40px;
+    }
+
+    
+    input {
+        width: 8%;
+        height: 34px;
+        font-size: 15px;
+        margin: 1.2%;
+        
+        margin-top: 0.4%;
+    }
+    .zero {
+        width: 20%;
+        height: 34px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+        background-image: url(PHONE.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .display h1 {
+        font-size: 40px;
+        margin-top: 20%;
+        margin-left: 0;
+    }
+
+    .input1 {
+        width: 30%;
+        height: 100px;
+        margin-top: 25%;
+        margin-bottom: 8%;
+        border-color: transparent;
+        margin-left: 2%;
+    }
+
+    input {
+        width: 6%;
+        height: 40px;
+        font-size: 18px;
+        margin: 0.8%;
+    }
+
+    .zero {
+        width: 15%;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    body {
+        background-image: url(PHONE.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .display h1 {
+        font-size: 40px;
+        margin-top: 20%;
+        margin-left: 0;
+    }
+
+    .input1 {
+        width: 30%;
+        height: 100px;
+        margin-top: 25%;
+        margin-bottom: 8%;
+        border-color: transparent;
+        margin-left: 2%;
+    }
+
+    input {
+        width: 6%;
+        height: 40px;
+        font-size: 18px;
+        margin: 0.8%;
+    }
+
+    .zero {
+        width: 15%;
+        height: 40px;
+    }
+}
+
